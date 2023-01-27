@@ -1,5 +1,5 @@
-const appId = "***REMOVED***";
-const locationId = "***REMOVED***";
+const appId = "";
+const locationId = "";
 
 document.addEventListener("DOMContentLoaded", async function () {
     if (!window.Square) {
