@@ -5,6 +5,16 @@ block content
   script(type='text/javascript' src='javascripts/yourmom.js')  
   #card-container
   #nonce-token
-    button#card-button(type='button') Store Card
-    p Nonce/token: None yet!
+    form#input-form
+      label(for='appId') Application ID:
+      br
+      input#appId(type='text' name='appId' size='50')
+      br
+      label(for='locId' size) Location ID:
+      br
+      input#locId(type='text' name='locId' size='16')
+      br
+    button#card-button(type='button') Tokenize Card
+    button#var-button(type='button') Set Variables
+    p#status Nonce/token: None yet!
   

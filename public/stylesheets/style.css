@@ -8,11 +8,21 @@ a {
 }
 
 button,
-p {
+p,
+label,
+input {
     font-size: large;
 }
 
 div {
     width: fit-content;
     block-size: fit-content;
+}
+
+button {
+    margin-top: 3px;
+}
+
+button#card-button {
+    display: none;
 }
