@@ -7,6 +7,12 @@ a {
     color: #00b7ff;
 }
 
-button {
+button,
+p {
     font-size: large;
+}
+
+div {
+    width: fit-content;
+    block-size: fit-content;
 }

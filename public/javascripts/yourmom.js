@@ -18,14 +18,14 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     const cardButton = document.getElementById("card-button");
     cardButton.addEventListener("click", async function (event) {
+        cardButton.disabled = true;
+        const nonce = document.getElementById("nonce-token");
         let tokenResult;
         try {
             tokenResult = await card.tokenize();
-            console.log(`BLAM! ${JSON.stringify(tokenResult.token)}`);
+            nonce.innerHTML = `<p>Nonce/token: <span style="color:green">${tokenResult.token}</span></p>`;
         } catch (err) {
-            console.error(`Error: ${err.message}`);
+            nonce.innerHTML = `<p>Error: <span style="color:red">${err.message}<span></p>`;
         }
     });
-
-    // alert("Boo!");
 });
